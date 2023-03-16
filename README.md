@@ -8,12 +8,12 @@ This template should help get you started developing with Tauri, React and Types
 
 
 ## Windows setup
-scoop install rustup
-scoop install mingw
-scoop install yarn
-scoop install nodejs
+* scoop install rustup
+* scoop install mingw
+* scoop install yarn
+* scoop install nodejs
 
-rustup install stable
-cargo install tauri-cli
-yarn install
-cargo tauri dev
+* rustup install stable
+* cargo install tauri-cli
+* yarn install
+* cargo tauri dev
