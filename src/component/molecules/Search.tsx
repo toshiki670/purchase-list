@@ -2,7 +2,7 @@ import React from  "react";
 import { Container, Box, TextField, Button, Grid } from "@mui/material";
 
 
-const Search = () => {
+export default function Search() {
   return (
     <Container disableGutters sx={{display: "flex", alignItems: 'flex-end' }}>
       <Container >
@@ -14,5 +14,3 @@ const Search = () => {
     </Container>
   );
 }
-
-export default Search;

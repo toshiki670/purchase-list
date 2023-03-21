@@ -4,7 +4,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
 
-const SideBer = () => {
+export default function SideBer() {
   const drawerWidth = 240;
 
   const handleClick = () => {
@@ -52,5 +52,3 @@ const SideBer = () => {
     </Drawer>
   );
 }
-
-export default SideBer;
