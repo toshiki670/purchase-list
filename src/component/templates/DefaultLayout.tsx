@@ -7,12 +7,6 @@ import Search from '../molecules/Search';
 import Control from '../organisms/Control';
 import PurchaseList from '../organisms/PurchaseList';
 
-type Row = {
-  id: number;
-  firstName: string;
-  lastName: string;
-  age: number | null;
-};
 
 type Props = {
   children: ReactNode
@@ -25,7 +19,6 @@ export default function DefaultLayout(props: Props) {
       <SideBer/>
       <Container fixed sx={{ m: 4}}>
         {props.children}
-        
       </Container>
     </Box>
   );
