@@ -1,4 +1,4 @@
-import React from  "react";
+import React, { useState, ReactNode } from  "react";
 import { Box, TextField, Button, Grid, Container } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
@@ -8,16 +8,17 @@ import Control from '../organisms/Control';
 import PurchaseList from '../organisms/PurchaseList';
 
 
+type Props = {
+  children: ReactNode
+}
 
-export default function HomeLayout() {
+
+export default function DefaultLayout(props: Props) {
   return (
     <Box sx={{display: "flex"}}>
       <SideBer/>
       <Container fixed sx={{ m: 4}}>
-        <Control />
-        <Box  sx={{ mt: 4,  }}>
-          <PurchaseList />
-        </Box>
+        {props.children}
       </Container>
     </Box>
   );
